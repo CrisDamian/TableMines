@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>TableMines</title>
+		<style>
+			body{font-family: monospace;
+				font-size: 14px;
+				color: #b6ff00;
+				background-color: #000;
+			}
+			pre{
+				margin: 0px 0px 0px 0px; 
+				padding: 0px 0px 0px 0px;             
+			}
+		</style>
+    </head>
+    <body>
+	<h1>Table mines</h1>
+	<p> A minesweeper clone with a textart vibe! </p>
+ 	<p> Refresh the page to restart. </p>    
+	<div id="TableMines">
+		<table>
+			<tr> 
+				<td>Check|</td><td>Table Size|</td><td>No Mines|</td>
+			</tr>
+			<tr> 
+				<td class="tmd" id="tmde"><pre class="flag">[X]</pre></td> <td>10x10</td> <td>10</td>
+			</tr>
+			<tr> 
+				<td class="tmd" id="tmdm"><pre class="hide">[ ]</pre></td> <td>15x15</td> <td>20</td>
+			</tr>
+			<tr> 
+				<td class="tmd" id="tmdh"><pre class="hide">[ ]</pre></td> <td>20x20</td> <td>30</td>
+			</tr>
+		</table>
+		<p id="StartMines">START GAME</p>
+
+        <table id="MinedTable">
+
+        </table>
+        <div id="Faces" style="display: none">
+			<pre class="hide">[ ]</pre>
+            <pre class="flag">[X]</pre>
+            <pre class="mine"> @ </pre>
+            <pre class="show empty">   </pre>
+			<pre class="border right left"> | </pre>
+			<pre class="border up down">---</pre>
+        </div>
+        <script src="jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="TableMines.js"></script>
+    </div>
+        
+    </body>
+</html>
